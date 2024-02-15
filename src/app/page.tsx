@@ -27,7 +27,13 @@ export default function Home() {
         ]}
       />
       <Header />
-      <main className='mt-[3.75rem]'></main>
+      <main className='mt-[3.75rem] bg-third w-full px-4 lg:px-8'>
+        <section className='h-screen text-white'>
+          <div className='container'>
+            aa
+          </div>
+        </section>
+      </main>
       <Footer />
     </>
   )

@@ -41,27 +41,11 @@ const config: Config = {
       colors: {
         primary: '#0E3494',
         secondary: '#D13138',
-        third: '#09090b',
+        third: '#171717',
         'secondary-active': '#730001',
         'secondary-hover': '#b82b32',
         gray: {
-          1: '#464646',
-          2: '#666666',
-          3: '#ACABAB',
-          4: '#DDDDDD',
-          5: '#424D68',
-          6: '#F6F6F6',
-          7: '#E4E4E4'
-        },
-        blue: {
-          1: '#1E5EFF',
-          2: '#0E3494',
-          3: '#061742',
-          4: '#E2EEFC',
-          5: '#3E507C'
-        },
-        green: {
-          1: '#85B915'
+          1: '#2e2e2e',
         }
       },
       lineHeight: {

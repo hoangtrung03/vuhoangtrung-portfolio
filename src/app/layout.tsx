@@ -7,7 +7,7 @@ const urbanist = Urbanist({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Vu Hoang Trung - Web Developer',
   description:
-    "Vu Hoang Trung - Web Developer with expertise in creating engaging and user-friendly websites. Specializing in front-end and back-end development, I bring creative solutions to life with a keen eye for design. Explore my portfolio for a showcase of innovative projects, demonstrating proficiency in technologies such as HTML, CSS, JavaScript, React, and more. Let's build the future of the web together.",
+    "Vu Hoang Trung - Web Developer with expertise in creating engaging and user-friendly websites. Specializing in front-end and back-end development, I bring creative solutions to life with a keen eye for design.",
   generator: 'Next.js',
   applicationName: 'Dev Portfolio',
   referrer: 'origin-when-cross-origin',
