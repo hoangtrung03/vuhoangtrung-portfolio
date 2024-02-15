@@ -55,6 +55,9 @@ const config: Config = {
         '1-4': '1.4',
         '1-5': '1.5',
         2: '2'
+      },
+      padding: {
+        60: '60px',
       }
     },
     container: {

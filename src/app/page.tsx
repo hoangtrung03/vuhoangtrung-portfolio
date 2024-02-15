@@ -27,9 +27,9 @@ export default function Home() {
         ]}
       />
       <Header />
-      <main className='mt-[3.75rem] bg-third w-full px-4 lg:px-8'>
+      <main className='mt-[3.75rem] bg-third w-full px-4 lg:px-8 duration-200'>
         <section className='h-screen text-white'>
-          <div className='container'>
+          <div className='container py-10 lg:py-60'>
             aa
           </div>
         </section>
