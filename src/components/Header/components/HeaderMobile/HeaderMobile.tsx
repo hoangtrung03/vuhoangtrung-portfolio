@@ -15,7 +15,7 @@ export default function HeaderMobile() {
 
   return (
     <header>
-      <div className='h-14 flex lg:hidden justify-between items-center fixed bg-white top-0 left-0 right-0 z-50 w-full'>
+      <div className='h-[3.75rem] flex lg:hidden justify-between items-center fixed top-0 left-0 right-0 z-50 border-b border-gray-1 w-full antialiased backdrop-blur-[4px]'>
         <div className='pl-4'>
           <Link href='/' title='logo'>
             <Image src='/logo.svg' title='logo' alt='logo' width={36} height={36} priority={true} />

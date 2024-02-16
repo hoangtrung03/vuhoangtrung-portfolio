@@ -14,7 +14,7 @@ export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
     <>
       <div
         className={classNames(
-          'fixed z-50 bg-white text-gray-1 top-0 bottom-0 w-full duration-300 ease-in-out shadow-1',
+          'fixed z-50 text-gray-1 top-0 bottom-0 w-full duration-300 ease-in-out bg-third text-white',
           {
             '-right-[110%]': !isOpenMenu,
             'right-0': isOpenMenu
