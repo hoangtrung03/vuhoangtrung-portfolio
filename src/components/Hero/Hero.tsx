@@ -51,8 +51,7 @@ export default function Hero() {
             height={480}
             alt='logo'
             title='logo'
-            style={{ borderRadius: '40% 60% 55% 45% / 48% 46% 54% 52%' }}
-            className='max-h-[350px] lg:max-h-[480px] object-cover border-2 border-white'
+            className='max-h-[350px] lg:max-h-[480px] object-cover border-2 border-white rounded-[40%_60%_55%_45%_/_48%_46%_54%_52%]'
           />
         </div>
       </div>
