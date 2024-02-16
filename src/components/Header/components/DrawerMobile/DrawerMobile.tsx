@@ -3,7 +3,6 @@
 import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 type Props = {
   isOpenMenu: boolean
@@ -11,8 +10,6 @@ type Props = {
 }
 
 export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
-  const pathName = usePathname()
-
   return (
     <>
       <div
@@ -39,12 +36,7 @@ export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
                     onClick={() => {
                       closeMenu()
                     }}
-                    className={classNames(
-                      'flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between',
-                      {
-                        'text-primary': pathName === '/' || pathName === '/projects'
-                      }
-                    )}
+                    className='flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between'
                     href='#work'
                     title='Work'
                   >
@@ -56,12 +48,7 @@ export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
                     onClick={() => {
                       closeMenu()
                     }}
-                    className={classNames(
-                      'flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between',
-                      {
-                        'text-primary': pathName === '/' || pathName === '/projects'
-                      }
-                    )}
+                    className='flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between'
                     href='#projects'
                     title='Projects'
                   >
@@ -73,12 +60,7 @@ export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
                     onClick={() => {
                       closeMenu()
                     }}
-                    className={classNames(
-                      'flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between',
-                      {
-                        'text-primary': pathName === '/' || pathName === '/projects'
-                      }
-                    )}
+                    className='flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between'
                     href='#skills'
                     title='Skills'
                   >
@@ -90,12 +72,7 @@ export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
                     onClick={() => {
                       closeMenu()
                     }}
-                    className={classNames(
-                      'flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between',
-                      {
-                        'text-primary': pathName === '/' || pathName === '/projects'
-                      }
-                    )}
+                    className='flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between'
                     href='#contact'
                     title='Contact'
                   >
