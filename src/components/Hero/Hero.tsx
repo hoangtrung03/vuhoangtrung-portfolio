@@ -52,7 +52,7 @@ export default function Hero() {
             alt='logo'
             title='logo'
             style={{ borderRadius: '40% 60% 55% 45% / 48% 46% 54% 52%' }}
-            className='max-h-[480px] object-cover'
+            className='max-h-[350px] lg:max-h-[480px] object-cover border-2 border-white'
           />
         </div>
       </div>
