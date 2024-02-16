@@ -7,7 +7,7 @@ const urbanist = Urbanist({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Vu Hoang Trung - Web Developer',
   description:
-    "Vu Hoang Trung - Web Developer with expertise in creating engaging and user-friendly websites. Specializing in front-end and back-end development, I bring creative solutions to life with a keen eye for design.",
+    'Vu Hoang Trung - Web Developer with expertise in creating engaging and user-friendly websites. Specializing in front-end and back-end development, I bring creative solutions to life with a keen eye for design.',
   generator: 'Next.js',
   applicationName: 'Dev Portfolio',
   referrer: 'origin-when-cross-origin',
@@ -18,18 +18,16 @@ export const metadata: Metadata = {
     'JavaScript',
     'Front-end',
     'Full Stack',
-    'UI/UX Design',
     'Responsive Web Design',
-    'Creative Developer',
     'HTML5 CSS3',
     'Mobile-First Development',
     'API Integration',
     'Performance Optimization'
   ],
-  authors: [{ name: 'Vu Hoang Trung' }, { name: 'Vu Hoang Trung', url: 'https://yakshit.co' }],
+  authors: [{ name: 'Vu Hoang Trung' }, { name: 'Vu Hoang Trung', url: 'https://vuhoangtrungportfolio.vercel.app/' }],
   creator: 'Vu Hoang Trung',
   publisher: 'Vu Hoang Trung',
-  metadataBase: new URL('https://yakshit.co'),
+  metadataBase: new URL('https://vuhoangtrungportfolio.vercel.app/'),
   alternates: {
     canonical: '/',
     languages: {
@@ -38,7 +36,7 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    images: 'https://raw.githubusercontent.com/YAKSHIT-22/Ogtag-Photos/main/Screenshot%202023-12-19%20001527.png'
+    images: 'https://i.im.ge/2024/02/16/cpxAWJ.portfolio.jpg'
   },
   robots: {
     index: false,

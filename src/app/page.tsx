@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import Hero from '@/components/Hero'
 import AnimatedCursor from 'react-animated-cursor'
 
 export default function Home() {
@@ -27,12 +28,8 @@ export default function Home() {
         ]}
       />
       <Header />
-      <main className='mt-[3.75rem] bg-third w-full px-4 lg:px-8 duration-200'>
-        <section className='h-screen text-white'>
-          <div className='container py-10 lg:py-60'>
-            aa
-          </div>
-        </section>
+      <main className='mt-[3.75rem] bg-third w-full duration-200'>
+        <Hero />
       </main>
       <Footer />
     </>
