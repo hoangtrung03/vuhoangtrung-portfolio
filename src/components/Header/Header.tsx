@@ -1,32 +1,42 @@
+'use client'
+
+import { useDisplay } from '@/lib/hooks/useDisplay'
 import Image from 'next/image'
 import Link from 'next/link'
+import HeaderMobile from './components/HeaderMobile'
 
 export default function Header() {
-  return (
+  const isMobile = useDisplay(1024)
+
+  return isMobile ? (
+    <>
+      <HeaderMobile />
+    </>
+  ) : (
     <>
       <header className='w-full fixed top-0 text-white p-2 border-b border-gray-1 z-[1] h-[3.75rem] bg-opacity-10 antialiased backdrop-blur-[1.5px]'>
         <div className='container flex items-center justify-between h-full'>
           <Link href='/' title='logo'>
-            <Image src='/logo.svg' width={40} height={40} alt='logo' title='logo' priority/>
+            <Image src='/logo.svg' width={40} height={40} alt='logo' title='logo' priority />
           </Link>
           <ul className='flex justify-end items-center gap-4'>
             <li>
-              <Link href='/#work' title='Work'>
+              <Link href='#work' title='Work'>
                 <p>Work</p>
               </Link>
             </li>
             <li>
-              <Link href='/#projects' title='Projects'>
+              <Link href='#projects' title='Projects'>
                 <p>Projects</p>
               </Link>
             </li>
             <li>
-              <Link href='/#skills' title='Skills'>
+              <Link href='#skills' title='Skills'>
                 <p>Skills</p>
               </Link>
             </li>
             <li>
-              <Link href='/#contact' title='Contact'>
+              <Link href='#contact' title='Contact'>
                 <p>Contact</p>
               </Link>
             </li>
