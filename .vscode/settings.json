@@ -32,8 +32,8 @@
     "largedesktop",
     "lastest",
     "leadform",
-    "libphonenumber",
     "lib/utils",
+    "libphonenumber",
     "linebreak",
     "maxage",
     "mediumdesktop",
@@ -58,6 +58,7 @@
     "Tiktok",
     "Touchs",
     "Trawick",
+    "webp",
     "xlargedesktop",
     "xsmallphone"
   ],

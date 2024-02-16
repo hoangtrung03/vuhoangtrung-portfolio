@@ -1,5 +1,6 @@
 'use client'
 import { motion, useAnimation, useInView } from 'framer-motion'
+import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 import WavyText from '../WavyText'
 
@@ -15,8 +16,8 @@ export default function Hero() {
   }, [isInView])
 
   return (
-    <section className='h-screen text-white mt-6' ref={ref}>
-      <div className='container py-10 lg:py-60'>
+    <section className='text-white mt-6 xl:h-[720px]' ref={ref}>
+      <div className='container py-10 lg:py-60 flex justify-between items-center flex-col-reverse lg:flex-row gap-4 lg:gap-7 xl:gap-10 h-full'>
         <div className='lg:max-w-[50%]'>
           <h2>
             <WavyText
@@ -42,6 +43,17 @@ export default function Hero() {
             I&apos;m a Web Developer with expertise in creating engaging and user-friendly websites. Specializing in
             front-end and back-end development, I bring creative solutions to life with a keen eye for design.
           </motion.p>
+        </div>
+        <div className='bg-shape z-[1]'>
+          <Image
+            src='/assets/images/avatar.webp'
+            width={480}
+            height={480}
+            alt='logo'
+            title='logo'
+            style={{ borderRadius: '40% 60% 55% 45% / 48% 46% 54% 52%' }}
+            className='max-h-[480px] object-cover'
+          />
         </div>
       </div>
     </section>
