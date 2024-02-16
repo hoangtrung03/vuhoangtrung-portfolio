@@ -33,4 +33,3 @@ const useDisplay = (param?: number) => {
 }
 
 export { useDisplay }
-
