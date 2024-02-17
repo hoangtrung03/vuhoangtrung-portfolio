@@ -1,4 +1,5 @@
-![alt text](https://i.im.ge/2024/02/17/ce1UFG.hoangtrung-portfolio.png)
+![Hoang Trung's Portfolio](https://i.im.ge/2024/02/17/ceDSJJ.hoangtrung-portfolio.png)
+
 # Vu Hoang Trung - Portfolio
 
 Welcome to my portfolio! I'm Vu Hoang Trung, a Web Developer with expertise in creating engaging and user-friendly websites. With a specialization in both front-end and back-end development, I bring creative solutions to life while maintaining a keen eye for design.
