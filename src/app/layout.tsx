@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    images: 'https://i.im.ge/2024/02/16/cpxAWJ.portfolio.jpg'
+    images: 'https://i.im.ge/2024/02/17/ce1UFG.hoangtrung-portfolio.png'
   },
   robots: {
     index: false,

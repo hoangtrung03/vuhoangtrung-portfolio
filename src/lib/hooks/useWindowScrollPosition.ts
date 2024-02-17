@@ -22,8 +22,8 @@ try {
 }
 
 const getPosition = () => ({
-  x: window.pageXOffset,
-  y: window.pageYOffset
+  x: window.scrollX,
+  y: window.scrollY
 })
 
 const defaultOptions = {
