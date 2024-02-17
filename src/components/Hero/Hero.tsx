@@ -1,7 +1,9 @@
 'use client'
+import { handleScroll } from '@/lib/utils/utilFuncs'
 import { motion, useAnimation, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
+import ParallaxItem from '../ParallaxItem'
 import WavyText from '../WavyText'
 
 export default function Hero() {
@@ -105,76 +107,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
-}
-
-function throttle(func: Function, limit: number): () => void {
-  let lastFunc: NodeJS.Timeout | null
-  let lastRan: number | null
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return function (this: any) {
-    const context = this
-    const args = arguments
-    if (!lastRan) {
-      func.apply(context, args)
-      lastRan = Date.now()
-    } else {
-      if (lastFunc) clearTimeout(lastFunc)
-      lastFunc = setTimeout(
-        function () {
-          if (Date.now() - (lastRan as number) >= limit) {
-            func.apply(context, args)
-            lastRan = Date.now()
-          }
-        },
-        limit - (Date.now() - (lastRan as number))
-      )
-    }
-  }
-}
-
-const handleScroll = (cb: Function) => throttle(cb, 100)
-const applyParallax = (scroll: number, y: number, amount: number) => {
-  if (scroll > y) {
-    const value = (scroll - y) * amount
-    return value
-  }
-
-  return 0
-}
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const ParallaxItem = (props: any) => {
-  const { scroll, ...rest } = props
-
-  const speed = props.speed || -0.02
-
-  const [y, setY] = useState<number>(0)
-  const el = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (el.current) {
-      window.addEventListener(
-        'scroll',
-        handleScroll(() => {
-          if (el.current) {
-            setY(el.current.getBoundingClientRect().top)
-          }
-        })
-      )
-    }
-  }, [])
-
-  return (
-    <motion.div
-      ref={el}
-      initial={{ opacity: 1 }}
-      animate={{
-        opacity: scroll > y ? 1 : 0,
-        y: applyParallax(scroll, y, speed)
-      }}
-      transition={{ duration: 0.5 }}
-      {...rest}
-    />
   )
 }
