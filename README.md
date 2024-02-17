@@ -1,4 +1,4 @@
-![Hoang Trung's Portfolio](https://i.im.ge/2024/02/17/ceDSJJ.hoangtrung-portfolio.png)
+![Hoang Trung's Portfolio](https://ik.imagekit.io/fh01eqtgh/hoangtrung-portfolio.PNG?updatedAt=1708144708202)
 
 # Vu Hoang Trung - Portfolio
 
