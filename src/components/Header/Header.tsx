@@ -14,7 +14,7 @@ export default function Header() {
     </>
   ) : (
     <>
-      <header className='w-full fixed top-0 text-white p-2 border-b border-gray-1 z-[1] h-[3.75rem] bg-opacity-10 antialiased backdrop-blur-[1.5px]'>
+      <header className='w-full fixed top-0 text-white p-2 border-b border-gray-1 z-10 h-[3.75rem] bg-opacity-10 antialiased backdrop-blur-[1.5px]'>
         <div className='container flex items-center justify-between h-full'>
           <Link href='/' title='logo'>
             <Image src='/logo.svg' width={40} height={40} alt='logo' title='logo' priority />
