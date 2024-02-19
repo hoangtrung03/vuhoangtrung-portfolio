@@ -50,7 +50,7 @@
     transform: translateX(-50%);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
     .timeline .event:after {
         left: -57.85px;
         transform: translateX(0);

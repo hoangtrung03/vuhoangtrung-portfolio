@@ -3,8 +3,8 @@ import { handleScroll } from '@/lib/utils/utilFuncs'
 import { motion, useAnimation, useInView } from 'framer-motion'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
-import ParallaxItem from '../ParallaxItem'
-import WavyText from '../WavyText'
+import ParallaxItem from '../../../components/ParallaxItem'
+import WavyText from '../../../components/WavyText'
 
 export default function Hero() {
   const ref = useRef(null)
