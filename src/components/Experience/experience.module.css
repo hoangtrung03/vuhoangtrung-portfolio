@@ -40,11 +40,19 @@
 
 .timeline .event:after {
     box-shadow: 0 0 0 4px #FF3860;
-    left: -57.85px;
+    left: -18px;
     background: #313534;
     border-radius: 50%;
     height: 11px;
     width: 11px;
     content: "";
     top: 5px;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1024px) {
+    .timeline .event:after {
+        left: -57.85px;
+        transform: translateX(0);
+    }
 }

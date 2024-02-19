@@ -18,7 +18,7 @@ export default function Experience() {
           <ul className={`${styles['timeline']} p-4 lg:p-10 mt-5 lg:mt-10 mx-auto`}>
             {experienceData.map((item, index) => (
               <li className={`${styles['event']} mb-5 lg:mb-10 last-of-type:mb-0`} data-date={item.date} key={index}>
-                <h3 className='font-bold text-28 lg:text-32'>{item.title}</h3>
+                <h3 className='uppercase font-bold text-28 lg:text-32'>{item.title}</h3>
                 <div
                   dangerouslySetInnerHTML={{ __html: item.description }}
                   className='mt-2 lg:mt-4 text-14 lg:text-16 text-white'
