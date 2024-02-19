@@ -1,3 +1,5 @@
+'use client'
+
 import { applyParallax, handleScroll } from '@/lib/utils/utilFuncs'
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'

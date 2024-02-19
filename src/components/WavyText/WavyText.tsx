@@ -1,3 +1,5 @@
+'use client'
+
 import type { HTMLMotionProps, Variants } from 'framer-motion'
 import { motion } from 'framer-motion'
 

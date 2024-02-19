@@ -1,3 +1,4 @@
+import WavyText from '@/components/WavyText'
 import styles from './experience.module.css'
 
 export default function Experience() {
@@ -14,7 +15,11 @@ export default function Experience() {
     <>
       <section id='experience'>
         <div className='container pt-10 lg:pt-60'>
-          <h2 className='uppercase font-bold text-32 lg:text-48 text-white'>Experience</h2>
+          <WavyText
+            text='Experience'
+            delay={0.6}
+            classText='uppercase font-bold text-32 lg:text-48 text-white justify-center lg:justify-start items-center'
+          />
           <ul className={`${styles['timeline']} p-4 lg:p-10 mt-5 lg:mt-10 mx-auto`}>
             {experienceData.map((item, index) => (
               <li className={`${styles['event']} mb-5 lg:mb-10 last-of-type:mb-0`} data-date={item.date} key={index}>

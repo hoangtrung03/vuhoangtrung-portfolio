@@ -30,29 +30,29 @@
 
 .timeline .event:before {
     left: -217.5px;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
     content: attr(data-date);
     text-align: right;
-    font-weight: 100;
-    font-size: 0.9em;
+    font-weight: 500;
+    font-size: 1rem;
     min-width: 120px;
 }
 
 .timeline .event:after {
     box-shadow: 0 0 0 4px #FF3860;
     left: -18px;
-    background: #313534;
+    background: #ffffff;
     border-radius: 50%;
     height: 11px;
     width: 11px;
     content: "";
-    top: 5px;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 1200px) {
     .timeline .event:after {
-        left: -57.85px;
-        transform: translateX(0);
+        left: -47px;
+        transform: translate(0, -50%);
     }
 }

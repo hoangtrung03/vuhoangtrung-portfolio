@@ -1,4 +1,5 @@
 'use client'
+
 import { handleScroll } from '@/lib/utils/utilFuncs'
 import { motion, useAnimation, useInView } from 'framer-motion'
 import Image from 'next/image'
@@ -15,9 +16,6 @@ export default function Hero() {
 
   useEffect(() => {
     setScroll(window.innerHeight)
-  }, [])
-
-  useEffect(() => {
     if (typeof window !== 'undefined') {
       window.addEventListener(
         'scroll',
