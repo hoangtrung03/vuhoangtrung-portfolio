@@ -13,13 +13,10 @@ export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
   return (
     <>
       <div
-        className={classNames(
-          'fixed z-50 text-gray-1 top-0 bottom-0 w-full duration-300 ease-in-out bg-third text-white',
-          {
-            '-right-[110%]': !isOpenMenu,
-            'right-0': isOpenMenu
-          }
-        )}
+        className={classNames('fixed z-50 top-0 bottom-0 w-full duration-300 ease-in-out bg-third text-white', {
+          '-right-[110%]': !isOpenMenu,
+          'right-0': isOpenMenu
+        })}
       >
         <div className='h-14 shadow-2 flex justify-between items-center px-4'>
           <Link href='/' title='logo'>
@@ -37,10 +34,10 @@ export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
                       closeMenu()
                     }}
                     className='flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between'
-                    href='#work'
-                    title='Work'
+                    href='#about'
+                    title='About'
                   >
-                    Work
+                    About
                   </Link>
                 </li>
                 <li>
@@ -49,10 +46,10 @@ export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
                       closeMenu()
                     }}
                     className='flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between'
-                    href='#projects'
-                    title='Projects'
+                    href='#experience'
+                    title='Experience'
                   >
-                    Projects
+                    Experience
                   </Link>
                 </li>
                 <li>
@@ -73,10 +70,10 @@ export default function DrawerMobile({ isOpenMenu, closeMenu }: Props) {
                       closeMenu()
                     }}
                     className='flex h-12 font-medium hover:font-bold hover:text-primary items-center w-full justify-between'
-                    href='#contact'
-                    title='Contact'
+                    href='#projects'
+                    title='Projects'
                   >
-                    Contact
+                    Projects
                   </Link>
                 </li>
               </ul>

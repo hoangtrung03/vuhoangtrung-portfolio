@@ -21,13 +21,13 @@ export default function Header() {
           </Link>
           <ul className='flex justify-end items-center gap-4'>
             <li>
-              <Link href='#work' title='Work'>
-                <p>Work</p>
+              <Link href='#about' title='About'>
+                <p>About</p>
               </Link>
             </li>
             <li>
-              <Link href='#projects' title='Projects'>
-                <p>Projects</p>
+              <Link href='#experience' title='Experience'>
+                <p>Experience</p>
               </Link>
             </li>
             <li>
@@ -36,8 +36,8 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href='#contact' title='Contact'>
-                <p>Contact</p>
+              <Link href='#projects' title='Projects'>
+                <p>Projects</p>
               </Link>
             </li>
           </ul>

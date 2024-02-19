@@ -1,3 +1,4 @@
+import Experience from '@/components/Experience'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
@@ -30,6 +31,7 @@ export default function Home() {
       <Header />
       <main className='mt-[3.75rem] bg-third w-full duration-200'>
         <Hero />
+        <Experience />
       </main>
       <Footer />
     </>
