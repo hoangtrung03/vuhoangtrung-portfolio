@@ -1,6 +1,6 @@
 /* Timeline */
 .timeline {
-    border-left: 4px solid #0E3494;
+    border-left: 4px solid #FF3860;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     background: rgba(255, 255, 255, 0.03);
@@ -43,7 +43,7 @@
 }
 
 .timeline .event:after {
-    box-shadow: 0 0 0 4px #0E3494;
+    box-shadow: 0 0 0 4px #FF3860;
     left: -57.85px;
     background: #313534;
     border-radius: 50%;

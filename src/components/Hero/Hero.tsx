@@ -46,7 +46,7 @@ export default function Hero() {
             <WavyText
               text='Hoang Trung'
               delay={0.6}
-              classText='uppercase font-bold text-38 lg:text-64 text-[#FF3860] justify-center lg:justify-start items-center'
+              classText='uppercase font-bold text-38 lg:text-64 text-secondary justify-center lg:justify-start items-center'
             />
           </h2>
           <motion.p

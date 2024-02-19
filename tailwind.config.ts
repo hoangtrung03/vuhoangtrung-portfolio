@@ -40,12 +40,12 @@ const config: Config = {
       },
       colors: {
         primary: '#0E3494',
-        secondary: '#D13138',
+        secondary: '#FF3860',
         third: '#171717',
         'secondary-active': '#730001',
         'secondary-hover': '#b82b32',
         gray: {
-          1: '#2e2e2e',
+          1: '#2e2e2e'
         }
       },
       lineHeight: {
@@ -57,7 +57,7 @@ const config: Config = {
         2: '2'
       },
       padding: {
-        60: '60px',
+        60: '60px'
       }
     },
     container: {
