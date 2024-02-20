@@ -1,7 +1,8 @@
 'use client'
 
 import type { HTMLMotionProps, Variants } from 'framer-motion'
-import { motion } from 'framer-motion'
+import { motion, useAnimation, useInView } from 'framer-motion'
+import { useMemo, useRef } from 'react'
 
 interface WavyTextProps extends HTMLMotionProps<'div'> {
   text: string
@@ -12,37 +13,50 @@ interface WavyTextProps extends HTMLMotionProps<'div'> {
 
 export default function WavyText({ text, delay = 0, duration = 0.05, classText, ...props }: WavyTextProps) {
   const letters = Array.from(text)
+  const ref = useRef(null)
+  const animationControl = useAnimation()
+  const inView = useInView(ref)
 
-  const container: Variants = {
-    hidden: {
-      opacity: 0
-    },
-    visible: (i: number = 1) => ({
-      opacity: 1,
-      transition: { staggerChildren: duration, delayChildren: i * delay }
-    })
+  if (inView) {
+    animationControl.start('visible')
   }
 
-  const child: Variants = {
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: 'spring',
-        damping: 12,
-        stiffness: 200
+  const container: Variants = useMemo(
+    () => ({
+      hidden: {
+        opacity: 0
+      },
+      visible: (i: number = 1) => ({
+        opacity: 1,
+        transition: { staggerChildren: duration, delayChildren: i * delay }
+      })
+    }),
+    [delay, duration]
+  )
+
+  const child: Variants = useMemo(
+    () => ({
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: 'spring',
+          damping: 12,
+          stiffness: 200
+        }
+      },
+      hidden: {
+        opacity: 0,
+        y: 20,
+        transition: {
+          type: 'spring',
+          damping: 12,
+          stiffness: 200
+        }
       }
-    },
-    hidden: {
-      opacity: 0,
-      y: 20,
-      transition: {
-        type: 'spring',
-        damping: 12,
-        stiffness: 200
-      }
-    }
-  }
+    }),
+    []
+  )
 
   return (
     <motion.span
@@ -50,9 +64,10 @@ export default function WavyText({ text, delay = 0, duration = 0.05, classText, 
       variants={container}
       initial='hidden'
       exit='hidden'
-      animate='visible'
+      animate={animationControl}
       className={classText}
       {...props}
+      ref={ref}
     >
       {letters.map((letter, index) => (
         <motion.span key={index} variants={child}>
