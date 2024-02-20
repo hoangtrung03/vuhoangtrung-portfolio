@@ -1,5 +1,8 @@
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 import type { Metadata, Viewport } from 'next'
 import { Urbanist } from 'next/font/google'
+import AnimatedCursor from 'react-animated-cursor'
 import './globals.css'
 
 const urbanist = Urbanist({ subsets: ['latin'] })
@@ -70,7 +73,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${urbanist.className} bg-third`}>{children}</body>
+      <body className={`${urbanist.className} bg-third`}>
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={20}
+          color='256, 256, 256'
+          outerAlpha={0.2}
+          innerScale={0.7}
+          outerScale={2.5}
+          clickables={[
+            'a',
+            'input[type="text"]',
+            'input[type="email"]',
+            'input[type="number"]',
+            'input[type="submit"]',
+            'input[type="image"]',
+            'label[for]',
+            'select',
+            'textarea',
+            'button',
+            '.link'
+          ]}
+        />
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

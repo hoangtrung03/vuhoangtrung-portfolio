@@ -49,6 +49,7 @@ export default function WavyText({ text, delay = 0, duration = 0.05, classText, 
       style={{ display: 'flex' }}
       variants={container}
       initial='hidden'
+      exit='hidden'
       animate='visible'
       className={classText}
       {...props}

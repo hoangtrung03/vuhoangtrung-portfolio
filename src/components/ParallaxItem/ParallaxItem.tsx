@@ -30,6 +30,7 @@ export default function ParallaxItem(props: any) {
     <motion.div
       ref={el}
       initial={{ opacity: 1 }}
+      exit={{ opacity: 1 }}
       animate={{
         opacity: scroll > y ? 1 : 0,
         y: applyParallax(scroll, y, speed),
