@@ -1,3 +1,4 @@
+import WavyText from '@/components/WavyText'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -5,7 +6,13 @@ export default function Projects() {
   return (
     <section>
       <div className='container py-10 lg:py-60'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-14'>
+        <h2>
+          <WavyText
+            text='Projects'
+            classText='uppercase font-bold text-32 lg:text-48 justify-center lg:justify-start items-center'
+          />
+        </h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-14 mt-2 lg:mt-4'>
           <div className='rounded-[10px] p-2 border border-white duration-200 group flex flex-col'>
             <div className='relative w-full pb-[40%] rounded-lg overflow-hidden flex-shrink-0'>
               <Image
