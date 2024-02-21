@@ -34,7 +34,7 @@ export default function Skills() {
     },
     {
       name: 'tailwind css',
-      image: '/assets/images/skills/icon-tailwind.png'
+      image: '/assets/images/skills/icon-tailwind-css.png'
     },
     {
       name: 'jira',
@@ -49,7 +49,7 @@ export default function Skills() {
           <h2>
             <WavyText
               text='Projects'
-              classText='uppercase font-bold text-32 lg:text-48 justify-center lg:justify-start items-center'
+              classText='uppercase font-bold text-32 lg:text-48 justify-center lg:justify-start items-center text-white'
             />
           </h2>
           <div className='grid grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8 mt-2 lg:mt-4'>

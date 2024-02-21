@@ -9,7 +9,7 @@ export default function Projects() {
         <h2>
           <WavyText
             text='Projects'
-            classText='uppercase font-bold text-32 lg:text-48 justify-center lg:justify-start items-center'
+            classText='uppercase font-bold text-32 lg:text-48 justify-center lg:justify-start items-center text-white'
           />
         </h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-14 mt-2 lg:mt-4'>
