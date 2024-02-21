@@ -48,11 +48,11 @@ export default function Skills() {
         <div className='container pt-10 lg:pt-60'>
           <h2>
             <WavyText
-              text='Projects'
+              text='Skills'
               classText='uppercase font-bold text-32 lg:text-48 justify-center lg:justify-start items-center text-white'
             />
           </h2>
-          <div className='grid grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8 mt-2 lg:mt-4'>
+          <div className='grid grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8 mt-2 lg:mt-4 lg:max-w-[60%] lg:mx-auto'>
             {skillData.map((item, index) => (
               <div data-skill={item.name} className={styles['card-skills']} key={index}>
                 {item?.image && (
@@ -61,7 +61,7 @@ export default function Skills() {
                     fill
                     alt={item.name ? item.name : 'Logo skill' + index}
                     title={item.name ? item.name : 'Logo skill' + index}
-                    className='object-cover'
+                    className='object-contain max-w-[50%] mx-auto'
                   />
                 )}
               </div>
