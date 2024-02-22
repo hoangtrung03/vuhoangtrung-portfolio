@@ -9,28 +9,132 @@ export default function Projects() {
       description:
         'Travelner Insurance is a global travel company that specializes in diverse insurance programs: travel insurance, travel medical insurance and assistance services. Our tailored offerings cater to travelers, students, and any individuals or groups living or working abroad. Driven by technology and an expanding portfolio, our aim is to become the leading provider of travel and health safety solutions for those who travel or reside away from home.',
       image: '/assets/images/projects/travelner-insurance.jpg',
-      link: 'https://www.travelnerinsurance.com/'
+      link: 'https://www.travelnerinsurance.com/',
+      tech: [
+        {
+          name: 'NextJS',
+          image: '/assets/images/skills/icon-nextjs.png'
+        },
+        {
+          name: 'React',
+          image: '/assets/images/skills/icon-react.png'
+        },
+        {
+          name: 'HTML',
+          image: '/assets/images/skills/icon-html5.png'
+        },
+        {
+          name: 'CSS',
+          image: '/assets/images/skills/icon-css3.png'
+        },
+        {
+          name: 'Javascript',
+          image: '/assets/images/skills/icon-javascript.png'
+        },
+        {
+          name: 'Typescript',
+          image: '/assets/images/skills/icon-typescript.png'
+        },
+        {
+          name: 'Typescript',
+          image: '/assets/images/skills/icon-tailwind-css.png'
+        },
+        {
+          name: 'Typescript',
+          image: '/assets/images/skills/icon-docker.png'
+        }
+      ]
     },
     {
       name: 'BIN Corporation Group',
       description:
         'BIN Corporation Group is an international multi-disciplinary company based in Ho Chi Minh City, Vietnam. It is founded in 2009 by an entrepreneur, Mr. Jimmy Lee. BIN Corp has offices in Hongkong, Singapore, Lithuania, Canada, USA. Thus, we work with a wide range of corporate clients and individuals across the US-UK, Europe, and Asia.</p><p>BIN Corp develops a tech-applied enterprise service ecosystem with the mission of “Thrive on customer-centricity”. Our fields of operation include business management consulting, financial consulting, digital marketing, e-commerce, travel, technology etc.',
       image: '/assets/images/projects/bincg.jpg',
-      link: 'https://sandbox.bincorporation.com/'
+      link: 'https://sandbox.bincorporation.com/',
+      tech: [
+        {
+          name: 'NextJS',
+          image: '/assets/images/skills/icon-nextjs.png'
+        },
+        {
+          name: 'React',
+          image: '/assets/images/skills/icon-react.png'
+        },
+        {
+          name: 'HTML',
+          image: '/assets/images/skills/icon-html5.png'
+        },
+        {
+          name: 'CSS',
+          image: '/assets/images/skills/icon-css3.png'
+        },
+        {
+          name: 'Javascript',
+          image: '/assets/images/skills/icon-javascript.png'
+        },
+        {
+          name: 'Typescript',
+          image: '/assets/images/skills/icon-typescript.png'
+        },
+        {
+          name: 'Typescript',
+          image: '/assets/images/skills/icon-tailwind-css.png'
+        },
+        {
+          name: 'Typescript',
+          image: '/assets/images/skills/icon-docker.png'
+        }
+      ]
     },
     {
       name: 'ONE IBC',
       description:
         'Tư vấn quản lý của One IBC ® bao gồm việc bán hàng và các hàng hóa liên quan của các tổ chức thực thể, thương nhân cá thể và quan hệ đối tác cung cấp nhiều tư vấn và hỗ trợ về lập kế hoạch tổ chức, lập ngân sách tài chính, chiến lược tiếp thị, thực tiễn nguồn nhân lực, chính sách quản lý và lập kế hoạch sản xuất và hậu cần.',
       image: '/assets/images/projects/oneibc.jpg',
-      link: 'https://sandbox.oneibc.com/'
+      link: 'https://sandbox.oneibc.com/',
+      tech: [
+        {
+          name: 'NextJS',
+          image: '/assets/images/skills/icon-nextjs.png'
+        },
+        {
+          name: 'React',
+          image: '/assets/images/skills/icon-react.png'
+        }
+      ]
     },
     {
       name: 'Travelner',
       description:
         'Travelner is a leading travel professional where you can find the best value flight instantly and easily. We offer a wide range of travel services including flight, visa, accommodation, and tours around the globe with the purpose of satisfying all travel needs in one platform. All services can be searched and booked directly online. As an expert in traveling, we understand all insights of our customers, who look for an A-Z booking process, reliable services, and first-class customer care.',
       image: '/assets/images/projects/travelner-banner.jpg',
-      link: 'https://www.travelner.com/'
+      link: 'https://www.travelner.com/',
+      tech: [
+        {
+          name: 'HTML',
+          image: '/assets/images/skills/icon-html5.png'
+        },
+        {
+          name: 'CSS',
+          image: '/assets/images/skills/icon-css3.png'
+        },
+        {
+          name: 'Javascript',
+          image: '/assets/images/skills/icon-javascript.png'
+        },
+        {
+          name: 'SASS',
+          image: '/assets/images/skills/icon-sass.png'
+        },
+        {
+          name: 'PHP',
+          image: '/assets/images/skills/icon-php.png'
+        },
+        {
+          name: 'jQuery',
+          image: '/assets/images/skills/icon-jquery.png'
+        }
+      ]
     }
   ]
 
@@ -61,16 +165,37 @@ export default function Projects() {
                 <div className='flex-1 mb-2 lg:mb-4'>
                   <h3 className='font-bold text-18 lg:text-24 text-white'>{item?.name}</h3>
                   <p className='text-14 lg:text-16 text-white mt-1 lg:mt-2 text-justify'>{item?.description}</p>
+                  {item?.tech && (
+                    <div className='flex items-center flex-wrap mt-1 lg:mt-2 gap-2 lg:gap-4'>
+                      <p className='text-white'>Tech stack:</p>
+                      {item?.tech?.map((logo, index) => (
+                        <div className='relative pb-6 lg:pb-10 overflow-hidden aspect-square' key={index}>
+                          {logo?.image && (
+                            <Image
+                              src={logo.image}
+                              fill
+                              alt={logo?.name ? logo?.name : 'Logo Tech' + index}
+                              title={logo?.name ? logo?.name : 'Logo Tech' + index}
+                              className='object-cover'
+                            />
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-                {item?.link && (
-                  <Link
-                    href={item?.link}
-                    title={item?.name}
-                    className='mt-auto flex-shrink-0 text-secondary font-semibold border border-secondary flex justify-center items-center h-10 px-4 rounded-lg hover:bg-secondary hover:text-white w-fit'
-                  >
-                    Go to website
-                  </Link>
-                )}
+
+                <div className='mt-auto flex-shrink-0'>
+                  {item?.link && (
+                    <Link
+                      href={item?.link}
+                      title={item?.name}
+                      className='text-secondary font-semibold border border-secondary flex justify-center items-center h-10 px-4 rounded-lg hover:bg-secondary hover:text-white w-fit'
+                    >
+                      Go to website
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           ))}
