@@ -12,7 +12,7 @@ export default function Projects() {
             classText='uppercase font-bold text-32 lg:text-48 justify-center lg:justify-start items-center text-white'
           />
         </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-14 mt-2 lg:mt-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 lg:gap-14 mt-5 lg:mt-10'>
           <div className='rounded-[10px] p-2 border border-white duration-200 group flex flex-col'>
             <div className='relative w-full pb-[40%] rounded-lg overflow-hidden flex-shrink-0'>
               <Image

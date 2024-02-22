@@ -34,7 +34,7 @@ export default function Hero() {
 
   return (
     <section className='text-white mt-6 xl:h-[720px]' ref={ref} id='about'>
-      <div className='container pt-10 lg:pt-60 flex justify-between items-center flex-col-reverse lg:flex-row gap-4 lg:gap-7 xl:gap-10 h-full'>
+      <div className='container pt-10 lg:pt-60 flex justify-between items-center flex-col-reverse lg:flex-row gap-6 lg:gap-7 xl:gap-10 h-full'>
         <div className='lg:max-w-[50%]'>
           <h2>
             <WavyText
