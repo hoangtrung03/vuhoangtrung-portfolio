@@ -52,7 +52,7 @@ export default function Skills() {
               classText='uppercase font-bold text-32 lg:text-48 justify-center lg:justify-start items-center text-white'
             />
           </h2>
-          <div className='grid grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8 mt-5 lg:mt-10 lg:max-w-[60%] lg:mx-auto'>
+          <div className='grid grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-8 mt-5 lg:mt-10 lg:max-w-[60%] lg:mx-auto px-4'>
             {skillData.map((item, index) => (
               <div data-skill={item.name} className={styles['card-skills']} key={index}>
                 {item?.image && (
