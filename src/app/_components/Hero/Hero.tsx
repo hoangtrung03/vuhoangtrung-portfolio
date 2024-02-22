@@ -33,7 +33,7 @@ export default function Hero() {
   }, [isInView])
 
   return (
-    <section className='text-white xl:h-[720px] mt-10' ref={ref} id='about'>
+    <section className='text-white xl:h-[720px] mt-14' ref={ref} id='about'>
       <div className='container pt-10 lg:pt-60 flex justify-between items-center flex-col-reverse lg:flex-row gap-6 lg:gap-7 xl:gap-10 h-full'>
         <div className='lg:max-w-[50%]'>
           <h2>
