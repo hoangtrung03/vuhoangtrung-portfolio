@@ -1,3 +1,4 @@
+import ReadMore from '@/components/ReadMore'
 import WavyText from '@/components/WavyText'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -164,7 +165,7 @@ export default function Projects() {
               <div className='px-2 flex-1 h-full flex flex-col my-2'>
                 <div className='flex-1 mb-2 lg:mb-4'>
                   <h3 className='font-bold text-18 lg:text-24 text-white'>{item?.name}</h3>
-                  <p className='text-14 lg:text-16 text-white mt-1 lg:mt-2 text-justify'>{item?.description}</p>
+                  <ReadMore text={item?.description} maxLength={190}></ReadMore>
                   {item?.tech && (
                     <div className='flex items-center flex-wrap mt-1 lg:mt-2 gap-2 lg:gap-4'>
                       <p className='text-white'>Tech stack:</p>
