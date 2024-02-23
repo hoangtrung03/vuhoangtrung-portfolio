@@ -90,7 +90,7 @@ export default function Projects() {
     {
       name: 'ONE IBC',
       description:
-        'Tư vấn quản lý của One IBC ® bao gồm việc bán hàng và các hàng hóa liên quan của các tổ chức thực thể, thương nhân cá thể và quan hệ đối tác cung cấp nhiều tư vấn và hỗ trợ về lập kế hoạch tổ chức, lập ngân sách tài chính, chiến lược tiếp thị, thực tiễn nguồn nhân lực, chính sách quản lý và lập kế hoạch sản xuất và hậu cần.',
+        "One IBC®'s management consulting encompasses sales and related merchandise of entities, individual traders, and partner relationships, offering extensive advice and support on organizational planning, financial budgeting, marketing strategies, human resource practices, management policies, and production and post-production planning.",
       image: '/assets/images/projects/oneibc.jpg',
       link: 'https://sandbox.oneibc.com/',
       tech: [
@@ -148,18 +148,30 @@ export default function Projects() {
             classText='uppercase font-bold text-32 lg:text-48 justify-center lg:justify-start items-center text-white'
           />
         </h2>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 lg:gap-14 mt-5 lg:mt-10'>
+        <h3>
+          <WavyText
+            text='1. Company Projects'
+            classText='uppercase font-bold text-28 lg:text-32 justify-center lg:justify-start items-center text-white'
+          />
+        </h3>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 my-5 lg:my-10'>
           {projectData.map((item, index) => (
             <div className='rounded-[10px] p-2 border border-white duration-200 group flex flex-col' key={index}>
               <div className='relative w-full pb-[40%] rounded-lg overflow-hidden flex-shrink-0'>
                 {item?.image && (
-                  <Image
-                    src={item?.image}
-                    fill
-                    alt={item?.name ? item?.name : 'Image project' + index}
-                    title={item?.name ? item?.name : 'Image project' + index}
-                    className='object-cover'
-                  />
+                  <Link
+                    href={item?.link}
+                    title={item?.name}
+                    className='text-secondary font-semibold border border-secondary flex justify-center items-center h-10 px-4 rounded-lg hover:bg-secondary hover:text-white w-fit'
+                  >
+                    <Image
+                      src={item?.image}
+                      fill
+                      alt={item?.name ? item?.name : 'Image project' + index}
+                      title={item?.name ? item?.name : 'Image project' + index}
+                      className='object-cover'
+                    />
+                  </Link>
                 )}
               </div>
               <div className='px-2 flex-1 h-full flex flex-col my-2'>
@@ -201,6 +213,12 @@ export default function Projects() {
             </div>
           ))}
         </div>
+        {/* <h3>
+          <WavyText
+            text='2. Personal Projects'
+            classText='uppercase font-bold text-28 lg:text-32 justify-center lg:justify-start items-center text-white'
+          />
+        </h3> */}
       </div>
     </section>
   )

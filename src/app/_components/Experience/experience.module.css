@@ -28,7 +28,7 @@
   top: 0;
 }
 
-.timeline .event:before {
+/* .timeline .event:before {
   left: -217.5px;
   color: rgba(255, 255, 255, 0.8);
   content: attr(data-date);
@@ -36,7 +36,7 @@
   font-weight: 500;
   font-size: 1rem;
   min-width: 120px;
-}
+} */
 
 .timeline .event:after {
   box-shadow: 0 0 0 4px #ff3860;

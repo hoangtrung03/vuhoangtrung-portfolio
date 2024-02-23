@@ -37,6 +37,10 @@ export default function Skills() {
       image: '/assets/images/skills/icon-tailwind-css.png'
     },
     {
+      name: 'PHP',
+      image: '/assets/images/skills/icon-php.png'
+    },
+    {
       name: 'jira',
       image: '/assets/images/skills/icon-jira.png'
     }

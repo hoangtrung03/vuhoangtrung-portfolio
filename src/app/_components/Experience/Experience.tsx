@@ -24,6 +24,7 @@ export default function Experience() {
             {experienceData.map((item, index) => (
               <li className={`${styles['event']} mb-5 lg:mb-10 last-of-type:mb-0`} data-date={item.date} key={index}>
                 <h3 className='uppercase font-bold text-28 lg:text-32'>{item.title}</h3>
+                <p className='mt-1 lg:mt-2'>{item?.date}</p>
                 <div
                   dangerouslySetInnerHTML={{ __html: item.description }}
                   className='mt-2 lg:mt-4 text-14 lg:text-16 text-white'
