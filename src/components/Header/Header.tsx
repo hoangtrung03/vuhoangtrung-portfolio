@@ -21,22 +21,22 @@ export default function Header() {
           </Link>
           <ul className='flex justify-end items-center gap-4'>
             <li>
-              <Link href='#about' title='About' className="font-semibold text-18 hover:text-secondary">
+              <Link href='#about' title='About' className='font-semibold text-18 hover:text-secondary'>
                 <p>About</p>
               </Link>
             </li>
             <li>
-              <Link href='#experience' title='Experience' className="font-semibold text-18 hover:text-secondary">
+              <Link href='#experience' title='Experience' className='font-semibold text-18 hover:text-secondary'>
                 <p>Experience</p>
               </Link>
             </li>
             <li>
-              <Link href='#skills' title='Skills' className="font-semibold text-18 hover:text-secondary">
+              <Link href='#skills' title='Skills' className='font-semibold text-18 hover:text-secondary'>
                 <p>Skills</p>
               </Link>
             </li>
             <li>
-              <Link href='#projects' title='Projects' className="font-semibold text-18 hover:text-secondary">
+              <Link href='#projects' title='Projects' className='font-semibold text-18 hover:text-secondary'>
                 <p>Projects</p>
               </Link>
             </li>

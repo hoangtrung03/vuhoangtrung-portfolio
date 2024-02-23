@@ -1,8 +1,4 @@
-import { type NextRequest } from 'next/server'
-
-export async function GET(request: NextRequest): Promise<Response> {
-  const { host } = request.nextUrl
-
+export async function GET(): Promise<Response> {
   const headerResponse = {
     status: 200,
     headers: {
@@ -15,8 +11,8 @@ export async function GET(request: NextRequest): Promise<Response> {
 
   const generateSitemap = `
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-        <url>
-            <loc>${`https://${host}/`}</loc>
+        <url> 
+            <loc>${`https://vuhoangtrungportfolio.vercel.app/`}</loc>
             <lastmod>${new Date().toISOString()}</lastmod>
             <changefreq>daily</changefreq>
             <priority>1.0000</priority>
