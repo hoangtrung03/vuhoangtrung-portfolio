@@ -136,6 +136,80 @@ export default function Projects() {
           image: '/assets/images/skills/icon-jquery.png'
         }
       ]
+    },
+    {
+      name: 'Hong Kong Company Formation',
+      description:
+        'Over these 10 years, Hong Kong Company Formation Services has built and strengthened connections with over 10.000 clients and partners all over the world. We always do our best to deliver the most appropriate services possible in the field of corporate services provider consulting.',
+      image: '/assets/images/projects/banner-home-page.jpg',
+      link: 'https://www.hongkongcompanyformation.hk/',
+      tech: [
+        {
+          name: 'WordPress',
+          image: '/assets/images/skills/icon-wordpress.png'
+        },
+        {
+          name: 'HTML',
+          image: '/assets/images/skills/icon-html5.png'
+        },
+        {
+          name: 'CSS',
+          image: '/assets/images/skills/icon-css3.png'
+        },
+        {
+          name: 'Javascript',
+          image: '/assets/images/skills/icon-javascript.png'
+        },
+        {
+          name: 'SASS',
+          image: '/assets/images/skills/icon-sass.png'
+        },
+        {
+          name: 'PHP',
+          image: '/assets/images/skills/icon-php.png'
+        },
+        {
+          name: 'jQuery',
+          image: '/assets/images/skills/icon-jquery.png'
+        }
+      ]
+    },
+    {
+      name: 'Singapore Company Formation',
+      description:
+        'Over these 10 years, Singapore Company Formation team has built and strengthened connections with over 10.000 clients and partners all over the world. We always do our best to deliver the most appropriate services possible in the field of corporate services provider consulting.',
+      image: '/assets/images/projects/home-banner.jpg',
+      link: 'https://www.singaporecompanyformation.com.sg/',
+      tech: [
+        {
+          name: 'WordPress',
+          image: '/assets/images/skills/icon-wordpress.png'
+        },
+        {
+          name: 'HTML',
+          image: '/assets/images/skills/icon-html5.png'
+        },
+        {
+          name: 'CSS',
+          image: '/assets/images/skills/icon-css3.png'
+        },
+        {
+          name: 'Javascript',
+          image: '/assets/images/skills/icon-javascript.png'
+        },
+        {
+          name: 'SASS',
+          image: '/assets/images/skills/icon-sass.png'
+        },
+        {
+          name: 'PHP',
+          image: '/assets/images/skills/icon-php.png'
+        },
+        {
+          name: 'jQuery',
+          image: '/assets/images/skills/icon-jquery.png'
+        }
+      ]
     }
   ]
 
