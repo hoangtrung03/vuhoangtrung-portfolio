@@ -4,7 +4,13 @@ import styles from './experience.module.css'
 export default function Experience() {
   const experienceData = [
     {
-      date: '08/2022 - Now',
+      date: '07/2024 - Now',
+      title: 'AIOZ Network',
+      description:
+        '<p>AIOZ Network provides secure, fast, and affordable decentralized storage solutions for dApps and developers. Our reliable IPFS infrastructure ensures seamless content management. AIOZ’s advanced streaming solution supports high-quality, low-latency video distribution globally.</p>'
+    },
+    {
+      date: '08/2022 - 06/2024',
       title: 'Bin Corporation Group',
       description:
         '<p>BIN Corporation Group is an international multi-disciplinary company based in Ho Chi Minh City, Vietnam. It is founded in 2009 by an entrepreneur, Mr. Jimmy Lee.</p><p>BIN Corp has offices in Hongkong, Singapore, Lithuania, Canada, USA. Thus, we work with a wide range of corporate clients and individuals across the US-UK, Europe, and Asia.</p><p>BIN Corp develops a tech-applied enterprise service ecosystem with the mission of “Thrive on customer-centricity”. Our fields of operation include business management consulting, financial consulting, digital marketing, e-commerce, travel, technology etc.</p>'

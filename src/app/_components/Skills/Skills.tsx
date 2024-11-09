@@ -29,16 +29,32 @@ export default function Skills() {
       image: '/assets/images/skills/icon-nextjs.png'
     },
     {
-      name: 'docker',
-      image: '/assets/images/skills/icon-docker.png'
-    },
-    {
       name: 'tailwind css',
       image: '/assets/images/skills/icon-tailwind-css.png'
     },
     {
+      name: 'Uniswap',
+      image: '/assets/images/skills/icon-uniswap.svg'
+    },
+    {
+      name: 'Web3JS',
+      image: '/assets/images/skills/icon-web3js.svg'
+    },
+    {
+      name: 'Ethers JS',
+      image: '/assets/images/skills/icon-etherjs.svg'
+    },
+    {
+      name: 'Wagmi',
+      image: '/assets/images/skills/icon-wagmi.svg'
+    },
+    {
       name: 'PHP',
       image: '/assets/images/skills/icon-php.png'
+    },
+    {
+      name: 'docker',
+      image: '/assets/images/skills/icon-docker.png'
     },
     {
       name: 'jira',

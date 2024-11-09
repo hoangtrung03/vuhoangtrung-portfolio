@@ -1,10 +1,8 @@
-import ReadMore from '@/components/ReadMore'
 import WavyText from '@/components/WavyText'
-import Image from 'next/image'
-import Link from 'next/link'
+import ProjectItem from './ProjectItem'
 
 export default function Projects() {
-  const projectData = [
+  const projectDataBIN = [
     {
       name: 'Travelner Insurance',
       description:
@@ -51,7 +49,7 @@ export default function Projects() {
       description:
         'BIN Corporation Group is an international multi-disciplinary company based in Ho Chi Minh City, Vietnam. It is founded in 2009 by an entrepreneur, Mr. Jimmy Lee. BIN Corp has offices in Hongkong, Singapore, Lithuania, Canada, USA. Thus, we work with a wide range of corporate clients and individuals across the US-UK, Europe, and Asia. BIN Corp develops a tech-applied enterprise service ecosystem with the mission of “Thrive on customer-centricity”. Our fields of operation include business management consulting, financial consulting, digital marketing, e-commerce, travel, technology etc.',
       image: '/assets/images/projects/bincg.jpg',
-      link: 'https://sandbox.bincorporation.com/',
+      link: 'https://www.bincorporation.com/',
       tech: [
         {
           name: 'NextJS',
@@ -213,6 +211,50 @@ export default function Projects() {
     }
   ]
 
+  const projectDataAIOZ = [
+    {
+      name: 'AIOZ Finance',
+      description:
+        'AIOZ Finance is a decentralized exchange (DEX) built on top of Uniswap protocol. It allows users to swap tokens in a decentralized manner without the need of a centralized exchange. AIOZ Finance is a permissionless protocol that only requires a Web3 wallet to start using it. The protocol is available on multiple networks such as Ethereum, AIOZ and others.',
+      image: '/assets/images/projects/aioz-network.png',
+      link: 'https://aiozswap-web.vercel.app/',
+      tech: [
+        {
+          name: 'Uniswap',
+          image: '/assets/images/skills/icon-uniswap.svg'
+        },
+        {
+          name: 'Web3JS',
+          image: '/assets/images/skills/icon-web3js.svg'
+        },
+        {
+          name: 'Ethers JS',
+          image: '/assets/images/skills/icon-etherjs.svg'
+        },
+        {
+          name: 'Wagmi',
+          image: '/assets/images/skills/icon-wagmi.svg'
+        },
+        {
+          name: 'HTML',
+          image: '/assets/images/skills/icon-html5.png'
+        },
+        {
+          name: 'CSS',
+          image: '/assets/images/skills/icon-css3.png'
+        },
+        {
+          name: 'Javascript',
+          image: '/assets/images/skills/icon-javascript.png'
+        },
+        {
+          name: 'Typescript',
+          image: '/assets/images/skills/icon-typescript.png'
+        }
+      ]
+    }
+  ]
+
   return (
     <section>
       <div className='container py-10 lg:py-60'>
@@ -224,67 +266,30 @@ export default function Projects() {
         </h2>
         <h3>
           <WavyText
-            text='1. Company Projects'
+            text='I. Company Projects'
             classText='uppercase font-bold text-28 lg:text-32 justify-center lg:justify-start items-center text-white'
           />
         </h3>
+        <h4>
+          <WavyText
+            text='1. AIOZ Network'
+            classText='uppercase font-bold text-18 lg:text-20 justify-center lg:justify-start items-center text-white'
+          />
+        </h4>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 my-5 lg:my-10'>
-          {projectData.map((item, index) => (
-            <div className='rounded-[10px] p-2 border border-white duration-200 group flex flex-col' key={index}>
-              <div className='relative w-full pb-[40%] rounded-lg overflow-hidden flex-shrink-0'>
-                {item?.image && (
-                  <Link
-                    href={item?.link}
-                    title={item?.name}
-                    className='text-secondary font-semibold border border-secondary flex justify-center items-center h-10 px-4 rounded-lg hover:bg-secondary hover:text-white w-fit'
-                  >
-                    <Image
-                      src={item?.image}
-                      fill
-                      alt={item?.name ? item?.name : 'Image project' + index}
-                      title={item?.name ? item?.name : 'Image project' + index}
-                      className='object-cover'
-                    />
-                  </Link>
-                )}
-              </div>
-              <div className='px-2 flex-1 h-full flex flex-col my-2'>
-                <div className='flex-1 mb-2 lg:mb-4'>
-                  <h3 className='font-bold text-18 lg:text-24 text-white'>{item?.name}</h3>
-                  <ReadMore text={item?.description} maxLength={190}></ReadMore>
-                  {item?.tech && (
-                    <div className='flex items-center flex-wrap mt-1 lg:mt-2 gap-2 lg:gap-4'>
-                      <p className='text-white'>Tech stack:</p>
-                      {item?.tech?.map((logo, index) => (
-                        <div className='relative pb-6 lg:pb-10 overflow-hidden aspect-square' key={index}>
-                          {logo?.image && (
-                            <Image
-                              src={logo.image}
-                              fill
-                              alt={logo?.name ? logo?.name : 'Logo Tech' + index}
-                              title={logo?.name ? logo?.name : 'Logo Tech' + index}
-                              className='object-cover'
-                            />
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-
-                <div className='mt-auto flex-shrink-0'>
-                  {item?.link && (
-                    <Link
-                      href={item?.link}
-                      title={item?.name}
-                      className='text-secondary font-semibold border border-secondary flex justify-center items-center h-10 px-4 rounded-lg hover:bg-secondary hover:text-white w-fit'
-                    >
-                      Go to website
-                    </Link>
-                  )}
-                </div>
-              </div>
-            </div>
+          {projectDataAIOZ.map((item, index) => (
+            <ProjectItem key={index} projectData={item} index={index} />
+          ))}
+        </div>
+        <h4>
+          <WavyText
+            text='1. BIN Corporation Group'
+            classText='uppercase font-bold text-18 lg:text-20 justify-center lg:justify-start items-center text-white'
+          />
+        </h4>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 my-5 lg:my-10'>
+          {projectDataBIN.map((item, index) => (
+            <ProjectItem key={index} projectData={item} index={index} />
           ))}
         </div>
         {/* <h3>
